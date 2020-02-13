@@ -1,0 +1,591 @@
+@charset "utf-8";
+@font-face {font-family: "High Tower Text";
+    src: url("/fonts/9e23421978544d8e00a00eb47740d280.eot"); /* IE9*/
+    src: url("/fonts/9e23421978544d8e00a00eb47740d280.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/9e23421978544d8e00a00eb47740d280.woff2") format("woff2"), /* chrome、firefox */
+    url("/fonts/9e23421978544d8e00a00eb47740d280.woff") format("woff"), /* chrome、firefox */
+    url("/fonts/9e23421978544d8e00a00eb47740d280.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/fonts/9e23421978544d8e00a00eb47740d280.svg#High Tower Text") format("svg"); /* iOS 4.1- */
+  }
+
+/* Resets */
+/* Box Sizing Reset */
+*,
+*:before,
+*:after {
+        box-sizing: border-box;
+}
+
+/* Responsive Image Reset */
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* General Resets */
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    background-color: white;
+}
+
+main h1, 
+main h2, 
+main article, main p, 
+main table,
+main ul,
+footer {
+      padding: 0 12px;
+  }
+
+a {
+    text-decoration: none;
+}
+
+
+main a:hover, 
+main a:focus,
+main a:active {
+    border-bottom: 1px solid #4B1027;
+    color: #4B1027;
+}
+
+main {
+    margin-top: 40px;
+}
+
+main p {
+    color: #9897A4;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+article img, table {
+    display: block;
+    margin: 25px auto 25px auto;
+}
+
+h1 {
+    font-family: "High Tower Text", serif;
+    color: #4B1027;
+    letter-spacing: 1.3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+hr {
+    border: 0.5px solid #BFCEE0;
+    margin: 30px 50px;
+}
+
+
+.row:last-child{
+    margin-bottom: 50px;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+}
+
+/* General Page Header (H1 + H2) Format */
+.page-header {
+    margin-top: 40px;
+}
+
+.page-header h1 {
+    font-size: 2em;
+    margin: -10px 0 10px 0;
+
+}
+
+.page-header h2 {
+    margin: 80px 0 12px 0;
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    color: #9897A4;
+    font-weight: normal;
+    font-size: 0.8em;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #E8EFF7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .logo-link {
+    display: block;
+    width: 50px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 15px;;
+}
+
+
+/* Header Navigation Styles */
+
+header nav {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav a {
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid #BFCEE0;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    font-size: 1.2em;
+    color: #777A87;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+header nav a:hover, 
+header nav a:focus,
+header nav a:active {
+    border-bottom: 1px solid #4B1027;
+    color: #4B1027;
+}
+
+.show header nav{
+    display: block;
+}
+
+
+/* Header Hamburger Styles */
+#btn-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    border: none;
+    color: #4B1027;
+    font-size: 2.8em;
+    font-weight: bold;
+    padding: 0; 
+    margin-right: 20px;
+    cursor: pointer;
+    }
+
+
+#btn-menu .icon {
+    position: relative;
+    top: -3px;
+}
+
+
+/* Home Page */
+
+.full-banner {
+    position: relative;
+    margin-bottom: -10px;
+}
+
+#home-overlay {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 1.8em;
+    text-align: left;
+  }
+
+
+#home-map {
+    width: 50%;
+}
+
+
+.mapsection .page-header h2 {
+    margin-top: 0;
+}
+
+#narrow-text {
+    margin: 20px 40px 20px 40px;
+    padding: 0;
+}
+
+.btn-experience a{
+    border: none;
+    background: #BFCEE0;
+    color: #4B1027;
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 15px 50px;
+    text-align: center;
+    margin: 36px auto;
+    cursor: pointer;
+    display: block;
+    width: 250px;
+}
+
+.btn-experience a:hover {
+    color: #777A87;
+    background: rgba(191, 206, 224, 0.582);
+    border: none;
+    transition: all 0.4s ease 0s;
+}  
+
+
+.pg-home .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-home main {
+    flex: 1;
+}
+
+
+/* Experience Page */
+.experience-nav a {
+    text-decoration: none;
+    color: #777A87;
+    line-height: 1.5;
+}
+
+.pg-experience .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-experience main {
+    flex: 1;
+    background-image: url('../images/banner-small-experience4.png');
+    background-size: cover;
+    background-position: bottom center;
+}
+
+#experience-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+#experience-overlay h1 {
+    font-size: 1.5em;
+}
+
+#experience-overlay h2, 
+#experience-overlay li {
+    font-size: 0.8em;
+}
+
+#experience-overlay li {
+    line-height: 1;
+}
+
+.pg-experience ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.pg-experience li {
+    line-height: 30px;
+}
+
+/* Foods Page */
+.pg-foods .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-foods main {
+    flex: 1;
+}
+
+.pg-foods p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Travel Tips Page */
+.tips-section article:last-child {
+    margin:100px 0 100px 0;
+}
+
+.tips-section  p {
+    text-align: center;
+}
+
+table {
+    border: 1px solid #BFCEE0;
+    text-align: center;
+    max-width: 79%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #4B1027;
+    font-size: 0.9em;
+    line-height: 1.5;
+   
+}
+
+table caption {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+
+table tbody {
+    width: 100%;
+    display: table;
+}
+
+table td,
+table th {
+    border-top: 1px solid #BFCEE0;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.pg-traveltips .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-traveltips main {
+    flex: 1;
+}
+
+/* Footer Style */
+
+footer {
+    background-color: #E8EFF7;
+    padding: 12px;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    color: #4B1027;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+footer a {
+    color: #4B1027;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: #9897A4;
+}
+
+/* Photo Credits Page */
+
+.pg-photocredits main ul {
+    list-style-type: none;
+    text-align: center;
+}
+.pg-photocredits main a {
+    display: inline;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    font-size: 1.1em;
+    color: #777A87;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.pg-photocredits main a:hover, 
+.pg-photocredits main a:focus,
+.pg-photocredits main a:active {
+    border-bottom: 1px solid #4B1027;
+    color: #4B1027;
+}
+
+.pg-photocredits .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg-photocredits main {
+    flex: 1;
+}
+
+
+/* Utility Classes */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+
+/* Responsive Settings */
+
+@media (min-width: 540px) {
+    #home-overlay {
+            font-size: 2.5em;
+            top: 15%;
+            left: 10%;
+    }
+}
+    
+@media (min-width: 800px) {
+    #home-overlay {
+        font-size: 3.2em;
+        top: 15%;
+        left: 10%;
+    }
+}  
+
+@media (min-width: 1000px) {
+    #home-overlay {
+        font-size: 3.5em;
+        top: 15%;
+        left: 10%;
+    }
+}
+
+@media (min-width: 320px){
+    #experience-overlay {
+        white-space: nowrap;
+    }
+
+    #experience-overlay li {
+        line-height: 2.5;
+    }
+}
+
+@media (min-height: 600px){
+    #experience-overlay {
+        transform: translate(-50%, 20%);
+    }
+
+    #experience-overlay li {
+        line-height: 2.3;
+    }
+
+    #experience-overlay h2, li {
+        font-size: 0.8em;
+    }
+
+    #experience-overlay h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-height: 1000px){
+    #experience-overlay {
+        transform: translate(-50%, 50%);
+    }
+
+    #experience-overlay h2, li {
+        font-size: 0.8em;
+    }
+
+    #experience-overlay h1 {
+        font-size: 2.5em;
+    }
+    
+}
+
+
+@media (min-width: 800px) {  
+header {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+main {
+    margin-top: -50px;
+}
+
+header nav {
+    display: block;
+    width: 480px;
+}
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    flex: 1;
+}
+
+header nav a {
+    border: none;
+    line-height: 40px;
+    text-align: center;
+    display: inline;
+}
+
+
+.home-banner {
+    position: relative;
+}
+    
+
+.page-header h1 {
+    font-size: 2.8em;
+}
+
+
+#narrow-text {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+/* Food Page Responsive Behavior */
+
+.food-row {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.food-row hr {
+    display: none;
+}
